@@ -1,0 +1,98 @@
+:root {
+    --primary-color: hsl(158, 36%, 37%);
+    --background-color: hsl(30, 38%, 92%);
+    --title-color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+    --secondary-background-color: hsl(0, 0%, 100%);
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info{
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.card__obj{
+    padding: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--text-color);
+}
+
+.card__title{
+    margin: 10px 0;
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    color: var(--title-color);
+}
+
+.card__description{
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.card__prices{
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.card__prices .current{
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    color: var(--primary-color);
+}
+
+.card__prices .old{
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+
+.card__button{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px;
+    padding: 15px;
+    width: 85%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--secondary-background-color);
+    background-color: var(--primary-color);
+}
+@media (min-width: 1440px) {}
