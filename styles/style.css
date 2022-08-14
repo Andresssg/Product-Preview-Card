@@ -1,5 +1,6 @@
 :root {
     --primary-color: hsl(158, 36%, 37%);
+    --darkest-primary-color: hsl(158, 51%, 24%);
     --background-color: hsl(30, 38%, 92%);
     --title-color: hsl(212, 21%, 14%);
     --text-color: hsl(228, 12%, 48%);
@@ -95,4 +96,10 @@ font-family: 'Montserrat', sans-serif; */
     color: var(--secondary-background-color);
     background-color: var(--primary-color);
 }
+
+.card__button:hover{
+    cursor: pointer;
+    background-color: var(--darkest-primary-color);
+}
+
 @media (min-width: 1440px) {}
