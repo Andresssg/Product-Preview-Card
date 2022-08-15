@@ -114,8 +114,6 @@
         height: 450px;
     }
 
-    
-
     .info{
         margin: 25px;
         padding: 0 20px;
@@ -123,5 +121,4 @@
         flex-direction: column;
         justify-content: space-between;
     }
-
 }
