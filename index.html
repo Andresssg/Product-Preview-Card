@@ -20,8 +20,10 @@
 
   <section class="container">
     <div class="card">
-      <img class="card__img--mobile" src="images/image-product-mobile.jpg" alt="Chanel fragrance">
-      <img class="card__img--desktop" src="images/image-product-desktop.jpg" alt="Chanel fragrance">
+      <picture class="images">
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 1440px)">
+        <img class="card__img--mobile" src="images/image-product-mobile.jpg" alt="Chanel fragrance">
+      </picture>
       <div class="info">
         <p class="card__obj">Perfume</p>
         <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>

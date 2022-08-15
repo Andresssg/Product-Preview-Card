@@ -31,8 +31,8 @@
     overflow: hidden;
 }
 
-.card__img--desktop {
-    display: none;
+.card__img--mobile{
+    width: 100%;    
 }
 
 .info {
@@ -114,13 +114,8 @@
         height: 450px;
     }
 
-    .card__img--mobile{
-        display: none;
-    }
-    .card__img--desktop{
-        display: block;
-        object-fit: cover;
-    }
+    
+
     .info{
         margin: 25px;
         padding: 0 20px;
