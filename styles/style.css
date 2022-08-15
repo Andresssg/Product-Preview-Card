@@ -90,14 +90,13 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .card__button {
-    align-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 15px;
-    width: 85%;
+    width: 100%;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -111,4 +110,26 @@ font-family: 'Montserrat', sans-serif; */
     background-color: var(--darkest-primary-color);
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .card{
+        flex-direction: row;
+        width: 625px;
+        height: 450px;
+    }
+
+    .card__img--mobile{
+        display: none;
+    }
+    .card__img--desktop{
+        display: block;
+        object-fit: cover;
+    }
+    .info{
+        margin: 25px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
